@@ -1,0 +1,6 @@
+{
+  "name": "FF AI Sensitivity Pro",
+  "description": "Next-gen neural calibration engine for Free Fire players. Optimize hardware-based sensitivity with advanced precision mapping.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
