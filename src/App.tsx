@@ -3,7 +3,7 @@ import { HeroSection } from "./components/HeroSection";
 import { SensitivityForm } from "./components/SensitivityForm";
 import { ResultScreen } from "./components/ResultScreen";
 import { CharacterCombos } from "./components/CharacterCombos";
-import { BackgroundParticles } from "./components/BackgroundParticles";
+import { BackgroundParticles } from "./BackgroundParticles";
 import { Footer, StaticPage } from "./components/Footer";
 import { UserSettings, SensitivityResults } from "./types";
 import { calculateSensitivity } from "./utils/calculator";
