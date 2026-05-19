@@ -11,10 +11,16 @@ export const HeroSection = ({ onStart, onShowCombos }: HeroSectionProps) => {
   const [isActivating, setIsActivating] = useState(false);
 
   const handleStart = () => {
+    window.open("https://www.effectivecpmnetwork.com/q1fyr7e5b?key=d27d5b0d4f46c4f760eba3a82aadd91e", "_blank", "noopener,noreferrer");
     setIsActivating(true);
     setTimeout(() => {
       onStart();
     }, 1500);
+  };
+
+  const handleTacticalCombos = () => {
+    window.open("https://www.effectivecpmnetwork.com/hf4pjcynn?key=df05d5fc7b60cbfe98da0cb3e3c152eb", "_blank", "noopener,noreferrer");
+    onShowCombos();
   };
 
   return (
@@ -115,7 +121,7 @@ export const HeroSection = ({ onStart, onShowCombos }: HeroSectionProps) => {
           </motion.button>
 
           <motion.button
-            onClick={onShowCombos}
+            onClick={handleTacticalCombos}
             whileHover={{ scale: 1.03, backgroundColor: "rgba(255,255,255,0.1)" }}
             whileTap={{ scale: 0.98 }}
             className="group relative px-12 py-6 bg-white/5 border border-white/10 rounded-2xl font-black text-lg text-white uppercase tracking-widest overflow-hidden backdrop-blur-xl transition-all duration-500"
