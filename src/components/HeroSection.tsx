@@ -11,7 +11,7 @@ export const HeroSection = ({ onStart, onShowCombos }: HeroSectionProps) => {
   const [isActivating, setIsActivating] = useState(false);
 
   const handleStart = () => {
-    window.open("https://www.effectivecpmnetwork.com/q1fyr7e5b?key=d27d5b0d4f46c4f760eba3a82aadd91e", "_blank", "noopener,noreferrer");
+    window.open("https://interviewdigress.com/q1fyr7e5b?key=d27d5b0d4f46c4f760eba3a82aadd91e", "_blank", "noopener,noreferrer");
     setIsActivating(true);
     setTimeout(() => {
       onStart();
@@ -19,7 +19,7 @@ export const HeroSection = ({ onStart, onShowCombos }: HeroSectionProps) => {
   };
 
   const handleTacticalCombos = () => {
-    window.open("https://www.effectivecpmnetwork.com/hf4pjcynn?key=df05d5fc7b60cbfe98da0cb3e3c152eb", "_blank", "noopener,noreferrer");
+    window.open("https://interviewdigress.com/hf4pjcynn?key=df05d5fc7b60cbfe98da0cb3e3c152eb", "_blank", "noopener,noreferrer");
     onShowCombos();
   };
 
