@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { HeroSection } from "./components/HeroSection";
 import { SensitivityForm } from "./components/SensitivityForm";
 import { ResultScreen } from "./components/ResultScreen";
@@ -14,6 +14,26 @@ type View = "hero" | "form" | "result" | "combos" | "static-about" | "static-pri
 export default function App() {
   const [view, setView] = useState<View>("hero");
   const [results, setResults] = useState<SensitivityResults | null>(null);
+
+  useEffect(() => {
+    // Safely load the Adsterra Popunder Script
+    const hasLoadedAd = sessionStorage.getItem("adsterra_popunder_loaded");
+    if (hasLoadedAd === "true") return;
+
+    const script = document.createElement("script");
+    script.src = "https://interviewdigress.com/8a/91/59/8a9159eef24a55be0fc84211d415b86e.js";
+    script.type = "text/javascript";
+    script.async = true;
+
+    document.body.appendChild(script);
+    sessionStorage.setItem("adsterra_popunder_loaded", "true");
+
+    return () => {
+      if (document.body.contains(script)) {
+        document.body.removeChild(script);
+      }
+    };
+  }, []);
 
   const handleStart = () => setView("form");
   const handleShowCombos = () => setView("combos");
